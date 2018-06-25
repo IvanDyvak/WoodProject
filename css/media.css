@@ -1,0 +1,240 @@
+@media screen and (max-width: 1110px){
+  nav #logo {
+    width: 80px;
+    height: 80px;
+  }
+  nav .upperItems a{
+    padding: 9px 0;
+  }
+  header p{
+  font-size: 60px;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 30px
+}
+
+header p:nth-child(2){
+  font-size: 60px;
+  color: rgba(255, 0, 0, 1);
+  letter-spacing: 1px
+}
+header p:nth-child(3){
+  font-size: 45px;
+  color: rgba(0, 2, 74, 1);
+}
+header .circle{
+  width: 80px;
+  height: 80px;
+}
+header .circle:nth-child(2)
+{
+    background-size: 81px 80px;
+
+}
+
+    }
+
+@media screen and (max-width: 900px){
+nav .upperItems a {
+  padding: 9px 1px;
+    }
+/*  nav {
+  line-height: 30px;
+    }*/
+#main #tab1{
+  padding: 20px 40px;
+  font-size: 20px
+}
+
+#pics #tab3{
+  padding-left: 5%
+}
+#cooperation .left p{
+  left: 2%;
+  font-size: 1.6em;
+  } 
+#cooperation .right p{
+  text-align: right;
+  left: 49%;
+  font-size: 1.6em;
+  } 
+
+  }
+
+@media screen and (max-width: 768px){
+  nav {
+  height: 70px;
+  line-height: 52px;
+    }
+  nav .upperItems{
+    display: none;
+  }
+nav #logo{
+  width: 65px;
+  height: 65px;
+  margin-left: 10%;
+  }
+#nav-toggle{
+  display: block
+}
+nav .menu{
+  z-index:1000000;
+  font-weight:bold; 
+  font-size: .9em; 
+  width:100%;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 1);  
+  position: absolute;
+  text-align: center;
+  top: 70px;
+  left: 0;
+ box-shadow:inset 2px -3px 75px #240000;
+}
+
+.menu li {
+  display: block;   
+/*  padding: 10px 0 10px 0; */
+  border-bottom:#fff 1px solid;
+}
+.menu li:last-child {
+  border-bottom: none;
+}
+.menu ul li a { 
+  text-decoration:none;  
+  margin: 0px; 
+  color: #fff; 
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+header{
+ /* height: auto;*/
+  margin-top: 0px;
+}
+header .wrap {
+    padding-top: 2%;
+    }
+header p{
+  font-size: 50px;
+  color: orange;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff, 3px -3px 0px #fff, -3px 3px 0px #fff;
+  font-weight: 800;
+  margin-left: 30px
+}
+
+header p:nth-child(2){
+  font-size: 40px;
+  text-shadow: 3px 3px 0px rgba(290, 299, 71, 0.8), -3px -3px 0px rgba(290, 299, 71, 0.8), 3px -3px 0px rgba(290, 299, 71, 0.8), -3px 3px 0px rgba(290, 299, 71, 0.8);
+  color: rgba(255, 0, 0, 1);
+  letter-spacing: 1px
+}
+header p:nth-child(3){
+  font-size: 30px;
+  color: rgba(0, 2, 74, 1);
+}
+header .circle{
+  width: 60px;
+  height: 60px;
+  box-shadow: none
+}
+header .circle:nth-child(2){
+    background-size: 60px 60px;
+
+}
+
+#main {
+  font-size: 20px;
+
+}
+#main #tab1{
+  padding: 20px 40px;
+}
+#product .item1{
+  font-size: 20px;
+}
+
+#pics,
+#pics #tab3{
+  height: auto;
+}
+#pics #tab3{
+  padding-left: 5%
+}
+
+#myBtn {
+    width: 60px;
+    height: 60px;
+}
+#tab5{
+  font-size: 1.7em;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 576px){
+nav #logo{
+  width: 60px;
+  height: 60px;
+  margin-left: 10%;
+  }
+nav .menu{
+  font-size:1em;
+  margin-top: -10px;
+}
+
+header p{
+  font-size: 60px;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 20px
+}
+header p:nth-child(2){
+  font-size: 58px;
+}
+header p:nth-child(3){
+  font-size: 35px;
+  }
+  header .circle{
+  display: none
+      }
+#product .item1 p{
+  font-size: 20px;
+}
+#product .itemTxt{
+  font-size: 18px;
+}
+
+.sliderSubTitle{
+  font-size: 15px;
+}
+#myBtn {
+    width: 60px;
+    height: 60px;
+}
+#tab5{
+  font-size: 1.6em;
+
+}
+}
+
+
+
+@media screen and (max-width: 375px){
+  header p{
+  font-size: 3em;
+  font-weight: 900;
+}
+header p:nth-child(2){
+  font-size: 3.5em;
+}
+header p:nth-child(3){
+  letter-spacing: 1px
+  font-size: 3.5em;
+  }
+.sliderSubTitle {
+  font-size: 12px;
+
+}
+}
