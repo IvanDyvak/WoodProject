@@ -194,7 +194,7 @@ header .wrap{
   width: 100%;
   padding-top: 2%;
   padding-bottom: 1%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 header p{
@@ -467,7 +467,7 @@ border: none;
   padding: 4%;
   font-size: 1.4em;
   color: #fff;
-  background-color: rgba(0, 0, 22, 0.7);
+  background-color: rgba(0, 0, 22, 0.6);
 }
 #tab5 h3{
     color: #c2c2c2;
