@@ -4,11 +4,11 @@
     height: 80px;
   }
   nav .upperItems a{
-    padding: 9px 0;
+    padding: 9px 5px 9px 0;
   }
   header p{
   font-size: 60px;
-  color: orange;
+  color: #f46352;
   text-transform: uppercase;
   font-weight: 800;
   margin-left: 30px
@@ -21,7 +21,7 @@ header p:nth-child(2){
 }
 header p:nth-child(3){
   font-size: 45px;
-  color: rgba(0, 2, 74, 1);
+  color: #4c4c4c;
 }
 header .circle{
   width: 80px;
@@ -35,32 +35,48 @@ header .circle:nth-child(2)
 
     }
 
-@media screen and (max-width: 900px){
-nav .upperItems a {
-  padding: 9px 1px;
+@media screen and (max-width: 930px){
+  .brand {
+    font-size: 20px;
     }
-/*  nav {
-  line-height: 30px;
-    }*/
+.brand span{
+  font-size: 25px;
+}
+header .wrap {
+  padding-top: 1%;
+    }
+header p{
+  font-size: 55px;
+}
+
+header p:nth-child(2){
+  font-size: 45px;
+
+}
+header p:nth-child(3){
+  font-size: 35px;
+}
+header .circle{
+  width: 60px;
+  height: 60px;
+  box-shadow: none
+}
+header .circle:nth-child(2){
+    background-size: 60px 60px;
+
+}
+
 #main #tab1{
   padding: 20px 40px;
-  font-size: 20px
+  font-size: 16px
 }
-
-#pics #tab3{
-  padding-left: 5%
-}
-#cooperation .left p{
-  left: 2%;
-  font-size: 1.6em;
-  } 
-#cooperation .right p{
-  text-align: right;
-  left: 49%;
-  font-size: 1.6em;
-  } 
 
   }
+@media screen and (min-width: 768px){
+ #tab5{
+  padding-top: 100px
+ }
+}
 
 @media screen and (max-width: 768px){
   nav {
@@ -74,6 +90,7 @@ nav #logo{
   width: 65px;
   height: 65px;
   margin-left: 10%;
+  margin-top: 15px;
   }
 #nav-toggle{
   display: block
@@ -90,6 +107,10 @@ nav .menu{
   top: 70px;
   left: 0;
  box-shadow:inset 2px -3px 75px #240000;
+}
+.brand {
+  font-size: 25px;
+    line-height: 37px;
 }
 
 .menu li {
@@ -115,23 +136,21 @@ header .wrap {
     padding-top: 2%;
     }
 header p{
-  font-size: 50px;
-  color: orange;
+  font-size: 55px;
+  color: #f46352;
   text-transform: uppercase;
-  text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff, 3px -3px 0px #fff, -3px 3px 0px #fff;
   font-weight: 800;
   margin-left: 30px
 }
 
 header p:nth-child(2){
   font-size: 40px;
-  text-shadow: 3px 3px 0px rgba(290, 299, 71, 0.8), -3px -3px 0px rgba(290, 299, 71, 0.8), 3px -3px 0px rgba(290, 299, 71, 0.8), -3px 3px 0px rgba(290, 299, 71, 0.8);
   color: rgba(255, 0, 0, 1);
   letter-spacing: 1px
 }
 header p:nth-child(3){
-  font-size: 30px;
-  color: rgba(0, 2, 74, 1);
+  font-size: 35px;
+  color: #4c4c4c;
 }
 header .circle{
   width: 60px;
@@ -143,13 +162,6 @@ header .circle:nth-child(2){
 
 }
 
-#main {
-  font-size: 20px;
-
-}
-#main #tab1{
-  padding: 20px 40px;
-}
 #product .item1{
   font-size: 20px;
 }
@@ -158,18 +170,15 @@ header .circle:nth-child(2){
 #pics #tab3{
   height: auto;
 }
-#pics #tab3{
+/*#pics #tab3{
   padding-left: 5%
-}
+}*/
 
 #myBtn {
     width: 60px;
     height: 60px;
 }
-#tab5{
-  font-size: 1.7em;
-  text-align: center;
-}
+
 }
 
 @media screen and (max-width: 576px){
@@ -182,16 +191,20 @@ nav .menu{
   font-size:1em;
   margin-top: -10px;
 }
+header #head{
+  line-height: 9rem;
+}
 
 header p{
-  font-size: 60px;
-  color: orange;
+  font-size: 55px;
+  /*color: orange;*/
   text-transform: uppercase;
   font-weight: 800;
-  margin-left: 20px
+  margin-left: 20px;
+  margin-bottom: auto;
 }
 header p:nth-child(2){
-  font-size: 58px;
+  font-size: 53px;
 }
 header p:nth-child(3){
   font-size: 35px;
@@ -199,6 +212,12 @@ header p:nth-child(3){
   header .circle{
   display: none
       }
+  header .low{
+   font-size: 18px
+  }
+  header .low span{
+   font-size: 23px
+  }
 #product .item1 p{
   font-size: 20px;
 }
@@ -213,17 +232,17 @@ header p:nth-child(3){
     width: 60px;
     height: 60px;
 }
-#tab5{
+/*#tab5{
   font-size: 1.6em;
 
-}
+}*/
 }
 
 
 
 @media screen and (max-width: 375px){
   header p{
-  font-size: 3em;
+  font-size: 3.8em;
   font-weight: 900;
 }
 header p:nth-child(2){
