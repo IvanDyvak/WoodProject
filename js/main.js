@@ -36,6 +36,7 @@ $("a[href^='#tab']").click(function(){
   });
 
 
+
 var animation_elements = $.find('.animation-element');
   var web_window = $(window);
 
@@ -78,14 +79,49 @@ var animation_elements = $.find('.animation-element');
       arrows: true,
       keypress: true
     });
-
-$(window).scroll(function () {
-    var elem = $('#main .fa');
-    setTimeout(function() {
-        elem.css({"opacity":"1","transition":"1s"});
-    },500);            
-    elem.css({"opacity":"0.2","transition":"1s"});    
+// !!!!!!!!!!HEADER Elements APPEAR!!!!!!!!!!!!!!!!!!
+    $(function() {
+  $("header .low").delay(2000).fadeIn();
 });
+  setTimeout(function() {
+  $("header .low").fadeOut();
+}, 6000);
+
+    $(function() {
+  $("#head").delay(6500).fadeIn();
+});
+    $(function() {
+  $(".icons").delay(7000).fadeIn();
+});
+
+    $(function() {
+  var web_window = $(window);
+var window_width = web_window.width();
+ if($(window).width() >= 576) {
+  $(".circle").delay(6500).fadeIn();
+}; ($(".circle").css({"display":"none"}))
+});
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// $(window).scroll(function () {
+//     var elem = $('#main .fa');
+//     setTimeout(function() {
+//         elem.css({"opacity":"1","transition":"1s"});
+//     },500);            
+//     elem.css({"opacity":"0.2","transition":"1s"});    
+// });
+
+
+// $(".btn").click(function () {
+//                 $.ajax({
+//                     type: "GET",
+//                     url: "pics.html",
+//                     success: function (data) {
+//                         $("#pics").append(data);
+//                         $('#pics').css({"overflow": "scroll"});
+//                         $('#pics .btn').css({"display": "none"});
+//                     }
+//                 });
+//             });
 
 
 })
