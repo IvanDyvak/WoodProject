@@ -83,6 +83,7 @@ var animation_elements = $.find('.animation-element');
     $(function() {
   $("header .low").delay(2000).fadeIn();
 });
+
   setTimeout(function() {
   $("header .low").fadeOut();
 }, 6000);
