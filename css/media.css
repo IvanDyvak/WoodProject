@@ -34,7 +34,11 @@ header .circle:nth-child(2)
 }
 
     }
-
+@media screen and (min-width: 930px){
+  header .icons{
+      margin-top: -10px;
+    }
+}
 @media screen and (max-width: 930px){
   .brand {
     font-size: 20px;
@@ -161,6 +165,9 @@ header .circle:nth-child(2){
     background-size: 60px 60px;
 
 }
+  #main{
+  height: auto;
+}
 
 #product .item1{
   font-size: 20px;
@@ -209,15 +216,19 @@ header p:nth-child(2){
 header p:nth-child(3){
   font-size: 35px;
   }
-  header .circle{
+header .circle{
   display: none
       }
-  header .low{
+header .low{
    font-size: 18px
   }
-  header .low span{
+header .low span{
    font-size: 23px
   }
+header .icons{
+      margin-top: -10px;
+    }
+
 #product .item1 p{
   font-size: 20px;
 }
