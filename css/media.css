@@ -58,7 +58,7 @@ header p:nth-child(2){
 
 }
 header p:nth-child(3){
-  font-size: 35px;
+  font-size: 40px;
 }
 header .circle{
   width: 60px;
@@ -153,7 +153,7 @@ header p:nth-child(2){
   letter-spacing: 1px
 }
 header p:nth-child(3){
-  font-size: 35px;
+  font-size: 40px;
   color: #4c4c4c;
 }
 header .circle{
@@ -207,14 +207,14 @@ header p{
   /*color: orange;*/
   text-transform: uppercase;
   font-weight: 800;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: auto;
 }
 header p:nth-child(2){
   font-size: 53px;
 }
 header p:nth-child(3){
-  font-size: 35px;
+  font-size: 40px;
   }
 header .circle{
   display: none
@@ -243,10 +243,6 @@ header .icons{
     width: 60px;
     height: 60px;
 }
-/*#tab5{
-  font-size: 1.6em;
-
-}*/
 }
 
 
