@@ -2,10 +2,6 @@ $(document).ready(function(){
 
 
 
-$('[style*="#tab4"]').append('<h1 class="heading">ЗАГОЛОВОК</h1>');
-
-
-
 document.querySelector( "#nav-toggle" )
   .addEventListener( "click", function() {
     this.classList.toggle( "active" );
@@ -29,7 +25,6 @@ $( "nav .menu" ).slideToggle( "slow", function() {
 // });
 
 $("a[href^='#tab']").click(function(){
-   // $('#nav-toggle').classList.toggle( "active" ); 
     $('body, html').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
     }, 1500)
@@ -80,26 +75,35 @@ var animation_elements = $.find('.animation-element');
       keypress: true
     });
 // !!!!!!!!!!HEADER Elements APPEAR!!!!!!!!!!!!!!!!!!
-    $(function() {
-  $("header .low").delay(2000).fadeIn();
-});
-
+//     $(function() {
+//   $(".brand span").delay(3400).css({"color":"#f46352"});
+// });
   setTimeout(function() {
-  $("header .low").fadeOut();
-}, 6000);
+    $(".brand span").css({"color":"#f46352"});
+    },2300);  
 
     $(function() {
-  $("#head").delay(6500).fadeIn();
+  $("#one").delay(2500).fadeIn();
 });
     $(function() {
-  $(".icons").delay(7000).fadeIn();
+  $("#two").delay(2700).fadeIn();
+});
+    $(function() {
+  $("#three").delay(2900).fadeIn();
+});
+
+//     $(function() {
+//   $("#head").delay(2500).fadeIn();
+// });
+    $(function() {
+  $(".icons").delay(3100).fadeIn();
 });
 
     $(function() {
   var web_window = $(window);
 var window_width = web_window.width();
  if($(window).width() >= 576) {
-  $(".circle").delay(6500).fadeIn();
+  $(".circle").delay(2500).fadeIn();
 }; ($(".circle").css({"display":"none"}))
 });
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
