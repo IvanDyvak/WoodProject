@@ -8,7 +8,7 @@
   }
   header p{
   font-size: 60px;
-  color: #f46352;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 800;
   margin-left: 30px
@@ -16,12 +16,12 @@
 
 header p:nth-child(2){
   font-size: 60px;
-  color: rgba(255, 0, 0, 1);
+  color: #ffe4b5;
   letter-spacing: 1px
 }
 header p:nth-child(3){
   font-size: 45px;
-  color: #767676
+  color: #fd0e35
 }
 header .circle{
   width: 80px;
@@ -141,7 +141,7 @@ header .wrap {
     }
 header p{
   font-size: 55px;
-  color: #f46352;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 800;
   margin-left: 30px
@@ -149,12 +149,12 @@ header p{
 
 header p:nth-child(2){
   font-size: 40px;
-  color: rgba(255, 0, 0, 1);
+  color: #ffe4b5;
   letter-spacing: 1px
 }
 header p:nth-child(3){
   font-size: 40px;
-  color: #767676;
+  color: #fd0e35;
 }
 header .circle{
   width: 60px;
@@ -214,16 +214,11 @@ header p:nth-child(2){
 }
 header p:nth-child(3){
   font-size: 40px;
+  padding-bottom: 30px
   }
 header .circle{
   display: none
       }
-header .low{
-   font-size: 18px
-  }
-header .low span{
-   font-size: 23px
-  }
 header .icons{
       margin-top: -10px;
     }
@@ -254,10 +249,10 @@ header .icons{
 header p:nth-child(2){
   font-size: 3.5em;
 }
-header p:nth-child(3){
-  letter-spacing: 1px
+/*header p:nth-child(3){
+  letter-spacing: 1px;
   font-size: 3.5em;
-  }
+  }*/
 .sliderSubTitle {
   font-size: 12px;
 
