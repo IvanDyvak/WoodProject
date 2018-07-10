@@ -146,8 +146,11 @@ nav #logo:before{
     letter-spacing: 2px;
     font-family: 'Abril Fatface', cursive;
     }
-.brand span{
+.red{
   color: #f46352;
+}
+.brand span{
+  color: #fff;
   font-size: 30px;
 }
 .brand:hover {
@@ -194,29 +197,29 @@ header .wrap{
   width: 100%;
   padding-top: 2%;
   padding-bottom: 1%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 header p{
+  display: none;
   font-size: 80px;
-  color: #f46352;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 900;
-  /*text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff;*/
-  /*text-shadow: 1px 1px 0px rgba(290, 299, 71, 0.8), -1px -1px 0px rgba(290, 299, 71, 0.8), 1px -1px 0px rgba(290, 299, 71, 0.8), -1px 1px 0px rgba(290, 299, 71, 0.8);*/
-
 }
 
 header p:nth-child(2){
+  display: none;
   font-size: 70px;
   /*text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff;*/
-  color: rgba(255, 0, 0, 1);
+  color:#ffe4b5;
   letter-spacing: 1px
 }
 header p:nth-child(3){
+  display: none;
   font-size: 65px;
   letter-spacing: -1px;
-  color: #767676; /*#5f5f5f;
+  color: #fd0e35;
   /*text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff;*/
 
   }
@@ -246,32 +249,11 @@ header .circle:nth-child(3){
   background: url(../img/001.jpg) no-repeat 97% 95%;
   background-size: 120px 120px
 }
-header .low{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 60vh;
-  font-size: 25px;
-  color: #d4af37;
-  padding: 4vh 10vh;
-  background: #efefef;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 6px;
-  z-index: 11;
-}
-header .low span{
-  font-size: 28px;
-}
-#head{
-  display: none;
-}
 header .icons{
   display: none;
   text-align: center;
-  color: #00ffcc;
+  color: #ffffff;
+  align-self: flex-end
 }
 
 #main{
@@ -346,19 +328,11 @@ header .icons{
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
 }
-/*#product #tab2{
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8)
-}*/
 
 #product .item1{
   height: auto;
   border-bottom: 1px dashed rgba(255, 255, 0, 1);
   text-align: left;
- /* background-color: rgba(0, 0, 0, 0.9);*/
   padding: 2% 10% 2% 4%;
 }
 #product .item1:last-child{
@@ -388,9 +362,7 @@ border: none;
 }
 
 #product .info{
-/*  color: #fff !important;*/
   font-size: 18px !important;
-  font-style: italic !important;
   font-weight: normal !important;
   color: #666666 !important;
 }
@@ -406,36 +378,25 @@ border: none;
 
  #pics{
   position: relative;
-  background: url(../img/img.jpg) repeat fixed center top;
   width: 100%;
   height: auto;
 }
-#pics #tab3{
-/*  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0px 40px;
-  background-color: #6d8fbf;
-/*  rgba(75, 15, 228, 0.1);*/
-}
-
 #pics img {
-        cursor: pointer;
-        border: 1px solid #f0f0f0;
-      }
-
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+}
+#tab3 div{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 #cooperation{
   position: relative;
   width: 100%;
-/*  height: 100vh;*/
   text-align: center;
 }
 
 .slider {
   width: 100%;
-/*  height: 100vh;*/
   margin: 0 auto;
   background-color: white;
   overflow: hidden;
@@ -506,9 +467,8 @@ border: none;
 footer{
   height: 80px;
   background-color: black;
-/*  opacity: 0.2;
   width: 100%;
-  /*flex: 0 0 auto;*/
+  flex: 0 0 auto;
   text-align: center
 }
 footer p {
