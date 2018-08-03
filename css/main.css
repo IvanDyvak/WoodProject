@@ -289,7 +289,7 @@ header .icons{
   -webkit-transform: translate3d(-100px, 0px, 0px);
   -o-transform: translate(-100px, 0px);
   -ms-transform: translate(-100px, 0px);
-  transform: translate3d(-200px, 0px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
 }
 .animation-element.slide-left.in-view {
   opacity: 1;
@@ -309,7 +309,7 @@ header .icons{
   -webkit-transform: translate3d(70px, 0px, 0px);
   -o-transform: translate(70px, 0px);
   -ms-transform: translate(70px, 0px);
-  transform: translate3d(100px, 0px, 0px);
+  transform: translate3d(50px, 0px, 0px);
 }
 .animation-element.slide-right.in-view {
   opacity: 1;
@@ -454,7 +454,7 @@ border: none;
   -webkit-transform: translate3d(0px, 50px, 0px);
   -o-transform: translate(0px, 50px);
   -ms-transform: translate(0px, 50px);
-  transform: translate3d(0px, 100px, 0px);
+  transform: translate3d(0px, 50px, 0px);
 }
 .animation-element.slide-up.in-view {
   opacity: 1;
@@ -465,7 +465,7 @@ border: none;
   transform: translate3d(0px, 0px, 0px);
 }
 footer{
-  height: 80px;
+  height: 90px;
   background-color: black;
   width: 100%;
   flex: 0 0 auto;
