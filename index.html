@@ -8,19 +8,21 @@
   <title>Wood project</title>
   <meta name="keywords" content="вагонка, дерево, лес, блок хаус, брус, доска, декор, интерьер">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.modallery.min.css">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Fredoka+One|Galada|Great+Vibes|Indie+Flower|Kaushan+Script|Lobster|Monoton|Orbitron|Russo+One|Shadows+Into+Light|Shrikhand" rel="stylesheet">
+  <link rel="stylesheet" href="css/component.css" />
 </head>
 
 <body>
   <div class="wrapper">
     <div class="content">
-<button onclick="topFunction()" id="myBtn" title="Вгору"><i class="fas fa-arrow-up fa-2x"></i></button>
+
+        <button onclick="topFunction()" id="myBtn" title="Вгору"><i class="fas fa-arrow-up "></i></button>
 
  <nav>
          <div class="row"> 
@@ -71,9 +73,9 @@
         </div>
           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
             <ul class="icons list-inline">
-            <li><i class="far fa-sun fa-3x"></i></li>
+            <li><i class="far fa-sun fa-3x fa-spin"></i></li>
             <li><i class="fas fa-umbrella fa-3x"></i></li>
-            <li><i class="fas fa-truck fa-3x"></i></li>
+            <li class="car"><i class="fas fa-truck fa-3x"></i></li>
             </ul>
           </div>
        </div>
@@ -99,14 +101,35 @@
     </div>
   </section>
 
+<button id="myCalc" class="md-trigger" data-modal="modal-13"><i class="fas fa-calculator fa-spin fa-3x"></i></button>
+
     <section id="product">
       <div class="row">
         <div class="wrap" id="tab2">
           <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="md-modal md-effect-13" id="modal-13">
+      <div class="md-content">
+        <h3>Як вираховувати м2 та переводити в м3</h3>
+        <div>
+          <p>Приклад: дошка підлоги завтовшки 35мм коштує 350грн за 1м2. Як дізнатися, скільки коштує 1м3 і скільки метрів квадратних буде в ньому?</p>
+          <ul>
+            <li>Щоб правильно поділити, потрібно товщину дошки <strong>(35мм)</strong> перевести в метри - <strong>0.035м</strong>.</li>
+            <li>Потім один метр кубічний ділимо на товщину дошки.</li>
+            <li><strong>1м3 : 0.035м (товщина дошки) = 28.57м2</strong>. Отримуємо кількість м2 в 1м3. Інакше кажучи, <strong>1м3</strong> дошки завтовшки <strong>35мм</strong> закриває площу <strong>28.57м2</strong>.</li>
+            <li><strong>28.57м2 х 350 грн (ціна 1м2) = 10 000грн</strong> буде коштувати 1м3 дошки завтовшки 35мм.</li>
+            <li>Вам необхідно, скажімо, <strong>8.3м3</strong> дошки товщиною <strong>35мм</strong>. Щоб перевірити, скільки метрів квадратних треба закрити, необхідно:</li>
+            <li><strong>8.3м3 х 10 000грн = 83 000грн</strong> за <strong>8.3м3</strong> підлоги завтовшки <strong>35мм</strong></li>
+            <li><strong>8.3м3 х 28,57 м2 = 237м2</strong> буде в <strong>8.3м3</strong> підлоги завтовшки <strong>35мм</strong>. Інакше кажучи, <strong>8.3м3</strong> дошки підлоги завтовшки <strong>35мм</strong> закриють площу в <strong>237м2</strong>.</li>
+          </ul>
+          <button class="md-close">Закрити!</button>
+        </div>
+      </div>
+    </div>
+<div class="md-overlay"></div>
 
                 <div class="col-xs-12 col-md-12 col-lg-12 item1">
                   <div class="col-xs-12 col-md-8 col-lg-8 animation-element slide-left testimonial">
-                      <h3>Вагонка (сосна)</h3>
+                      <h3>Вагонка (сосна)<span class="badge">Акція</span></h3>
                       <p>від 90 грн/м2</p>
                       <img class="img-responsive" src="img/vagonka1.png">
                   </div>
@@ -114,7 +137,7 @@
                       <ul>
                         <li><i class="fa fa-check"></i><span>Сорт</span>: вищий, 1-й, 2-й</li>
                         <li><i class="fa fa-check"></i><span>Товщина</span>: 13мм</li>
-                        <li><i class="fa fa-check"></i><span>Ширина</span>: 80мм</li>
+                        <li><i class="fa fa-check"></i><span>Ширина</span>: 73/97мм</li>
                         <li><i class="fa fa-check"></i><span>Довжина</span>: 500-700/800-900/1000-1900/2000-3000мм</li>
                       </ul>                     
                     </div>
@@ -126,15 +149,15 @@
                 <div class="col-xs-12 col-md-12 col-lg-12 item1">
                   <div class="col-xs-12 col-md-8 col-lg-8 animation-element slide-left testimonial">
                        <h3>Блок-хаус (сосна)</h3>
-                      <p>від 160 грн/м2</p>
+                      <p>від <span class="price">350 грн/м2</span></p>
                       <img class="img-responsive" src="img/blokHaus.jpg">
                     </div>
                     <div class="col-xs-12 col-md-4 col-lg-4 itemTxt animation-element slide-left testimonial">
                       <ul>
                         <li><i class="fa fa-check"></i><span>Сорт</span>: вищий, 1-й</li>
-                        <li><i class="fa fa-check"></i><span>Товщина</span>: 20-45мм</li>
+                        <li><i class="fa fa-check"></i><span>Товщина</span>: 35мм</li>
                         <li><i class="fa fa-check"></i><span>Ширина</span>: 105-135мм</li>
-                        <li><i class="fa fa-check"></i><span>Довжина</span>: 4000-4500мм</li>
+                        <li><i class="fa fa-check"></i><span>Довжина</span>: 4000мм</li>
                       </ul> 
                     </div>
                   <div class="col-xs-10 col-md-8 col-lg-8 animation-element slide-right testimonial alert" role="alert">
@@ -145,15 +168,15 @@
                 <div class="col-xs-12 col-md-12 col-lg-12 item1">
                   <div class="col-xs-12 col-md-8 col-lg-8 animation-element slide-left testimonial">
                       <h3>Фальш-брус (сосна)</h3>
-                      <p>від 110 грн/м2</p>
+                      <p>від <span class="price">200 грн/м2</span></p>
                       <img class="img-responsive" src="img/falshbrus.jpg">
                     </div>
                     <div class="col-xs-12 col-md-4 col-lg-4 itemTxt animation-element slide-left testimonial">
                       <ul>
                         <li><i class="fa fa-check"></i><span>Сорт</span>: вищий, 1-й, 2-й</li>
-                        <li><i class="fa fa-check"></i><span>Товщина</span>: 20-30мм</li>
-                        <li><i class="fa fa-check"></i><span>Ширина</span>: 105-140мм</li>
-                        <li><i class="fa fa-check"></i><span>Довжина</span>: 3000-4500мм</li>
+                        <li><i class="fa fa-check"></i><span>Товщина</span>: 20мм</li>
+                        <li><i class="fa fa-check"></i><span>Ширина</span>: 100мм</li>
+                        <li><i class="fa fa-check"></i><span>Довжина</span>: 4000мм</li>
                       </ul> 
                     </div>
                     <div class="col-xs-10 col-md-8 col-lg-8 animation-element slide-right testimonial alert" role="alert">
@@ -164,15 +187,15 @@
                 <div class="col-xs-12 col-md-12 col-lg-12 item1">
                   <div class="col-xs-12 col-md-8 col-lg-8 animation-element slide-left testimonial">
                       <h3>Дошка підлоги (сосна)</h3>
-                      <p>від 160 грн/м2</p>
+                      <p>від <span class="price">350 грн/м2</span></p>
                       <img class="img-responsive" src="img/doskaPola.jpg">
                   </div>
                   <div class="col-xs-12 col-md-4 col-lg-4 itemTxt animation-element slide-left testimonial">
                       <ul>
                         <li><i class="fa fa-check"></i><span>Сорт</span>: вищий, 1-й</li>
-                        <li><i class="fa fa-check"></i><span>Товщина</span>: 20-45мм</li>
-                        <li><i class="fa fa-check"></i><span>Ширина</span>: 100-140мм</li>
-                        <li><i class="fa fa-check"></i><span>Довжина</span>: 4000-4500мм</li>
+                        <li><i class="fa fa-check"></i><span>Товщина</span>: 35мм</li>
+                        <li><i class="fa fa-check"></i><span>Ширина</span>: 125мм</li>
+                        <li><i class="fa fa-check"></i><span>Довжина</span>: 4000мм</li>
                       </ul> 
                     </div>
                     <div class="col-xs-10 col-md-8 col-lg-8 animation-element slide-right testimonial alert" role="alert">
@@ -183,7 +206,7 @@
                 <div class="col-xs-12 col-md-12 col-lg-12 item1">
                   <div class="col-xs-12 col-md-8 col-lg-8 animation-element slide-left testimonial">
                     <h3>Брус (сосна)</h3>
-                    <p>від 100 грн/м.пог</p>
+                    <p>від <span class="price">3500 грн/м3</span></p>
                     <img class="img-responsive" src="img/brus.jpg">
                   </div>
                     <div class="col-xs-12 col-md-4 col-lg-4 itemTxt animation-element slide-left testimonial">
@@ -346,6 +369,12 @@ function scrollFunction() {
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
+
+     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("myCalc").style.display = "block";
+    } else {
+        document.getElementById("myCalc").style.display = "none";
+    }
 }
 function topFunction() {
     document.body.scrollTop = 0;
@@ -361,6 +390,8 @@ function topFunction() {
   <script src="js/bootstrap.min.js"></script> 
   <script src="js/bootstrap.modallery.min.js"></script>
   <script src="js/SimpleEasySlider1.1.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/modalEffects.js"></script>
 
 </body>
 
