@@ -14,15 +14,6 @@ $( "nav .menu" ).slideToggle( "slow", function() {
 });
 });
 
-// $(window).bind('scroll', function(){
-//      if ($(window).scrollTop() > 200) {
-//        // $('nav').css({'height':'40px', 'width':'80%'});
-//          $('nav').hide('slow');
-//      }
-//      else {
-//          $('nav').show();
-//      }
-// });
 
 $("a[href^='#tab']").click(function(){
     $('body, html').animate({
@@ -69,32 +60,27 @@ var animation_elements = $.find('.animation-element');
   $(window).trigger('scroll');
 
     $(document).modallery({
-      // title: 'The Beauty of the World',
       navigate: true,
       arrows: true,
       keypress: true
     });
 // !!!!!!!!!!HEADER Elements APPEAR!!!!!!!!!!!!!!!!!!
-//     $(function() {
-//   $(".brand span").delay(3400).css({"color":"#f46352"});
-// });
+
   setTimeout(function() {
     $(".brand span").css({"color":"#f46352"});
     },2300);  
 
     $(function() {
-  $("#one").delay(2500).fadeIn();
+  $("#one").delay(2500).slideDown();
 });
     $(function() {
-  $("#two").delay(2700).fadeIn();
+  $("#two").delay(2700).slideDown();
 });
     $(function() {
-  $("#three").delay(2900).fadeIn();
+  $("#three").delay(2900).slideDown();
 });
 
-//     $(function() {
-//   $("#head").delay(2500).fadeIn();
-// });
+
     $(function() {
   $(".icons").delay(3100).fadeIn();
 });
@@ -106,27 +92,31 @@ var window_width = web_window.width();
   $(".circle").delay(2500).fadeIn();
 }; ($(".circle").css({"display":"none"}))
 });
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// $(window).scroll(function () {
-//     var elem = $('#main .fa');
-//     setTimeout(function() {
-//         elem.css({"opacity":"1","transition":"1s"});
-//     },500);            
-//     elem.css({"opacity":"0.2","transition":"1s"});    
-// });
+
+function moveClass() {
+    $('.car').toggleClass('carActive');
+}
+setInterval(moveClass, 2000);
 
 
-// $(".btn").click(function () {
-//                 $.ajax({
-//                     type: "GET",
-//                     url: "pics.html",
-//                     success: function (data) {
-//                         $("#pics").append(data);
-//                         $('#pics').css({"overflow": "scroll"});
-//                         $('#pics .btn').css({"display": "none"});
-//                     }
-//                 });
-//             });
+function offer() {
+            var offer = $(".badge");
+        offer.animate({fontSize: '15px'}, "ease-out");
+        offer.animate({fontSize: '20px'}, "ease-out");
+        offer.animate({marginTop: '-5px'}, "ease-out");
+    }
+setInterval(offer, 2000);
 
+function size() {
+            var price = $(".price");
+        price.animate({fontSize: '15px'}, "ease-out");
+        price.animate({fontSize: '23px'}, "ease-out");
+        // price.animate({marginTop: '-5px'}, "ease-out");
+    }
+setInterval(size, 2000);
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
 
 })
