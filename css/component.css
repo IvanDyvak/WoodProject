@@ -27,12 +27,13 @@ perspective effects (not including the modals and the overlay).
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 50%;
+	width: 80%;
 	max-width: 630px;
 	min-width: 320px;
-	height: auto;
+	height: 320px;
 	z-index: 2000;
 	visibility: hidden;
+	overflow: scroll;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -73,7 +74,7 @@ perspective effects (not including the modals and the overlay).
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
-	overflow: scroll;
+	/*overflow: scroll;*/
 }
 .md-close {
 	color: black;
@@ -156,10 +157,4 @@ perspective effects (not including the modals and the overlay).
 @keyframes slit {
 	50% { transform: translateZ(-250px) rotateY(89deg); opacity: 1; animation-timing-function: ease-in;}
 	100% { transform: translateZ(0) rotateY(0deg); opacity: 1; }
-}
-
-
-
-@media screen and (max-width: 32em) {
-	body { font-size: 75%; }
 }
